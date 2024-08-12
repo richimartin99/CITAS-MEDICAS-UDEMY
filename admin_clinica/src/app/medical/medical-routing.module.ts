@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MedicalComponent } from './medical.component';
 import { AuthGuard } from '../shared/gaurd/auth.guard';
 
+// http:/localhost:4200/roles/register
 const routes: Routes = [
   {
     path:'',
