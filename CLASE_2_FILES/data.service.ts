@@ -550,6 +550,10 @@ export class DataService {
       ],
     },
   ];
+  // public sideBarList = [
+    
+  // ];
+
   public carousel1 = [
     {
       quantity: '68',
