@@ -13,6 +13,7 @@ export class AddRoleUserComponent {
   name:string = '';
   permissions:any = [];
   valid_form: boolean = false;
+  valid_form_success: boolean = false;
   constructor(
     public DataService: DataService,
     public RoleService: RolesService,
@@ -46,10 +47,12 @@ export class AddRoleUserComponent {
       permisions: this.permissions,
     };
     console.log("enviando");
+    this.valid_form_success = false;
     this.RoleService.storeRoles(data).subscribe((resp:any) => {
       console.log(resp);
       this.name = '';
       this.permissions = [];
+      this.valid_form_success = true;
     })
   }
 }
